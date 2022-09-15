@@ -72,6 +72,11 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 - page   
     원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. 
     해결) Long타입 List를 가지는 dto 클래스를 생성하고 controller에서 이 dto를 통해 List를 전달받음.
+    
+- 카카오 로그인시 Kakao Rest API "Redirect URI mismatch." 에러   
+    원인) 프론트엔드에서 인가코드 받을때 Redirect URI가 백엔드에서 액세스토큰을 받을때 Redirect URI이 달라서 생긴 문제.
+    해결) 액세스 토큰을 받을때 Redirect URI을   프론트와 똑같이 해줌으로써 해결
+       예) ("redirect_uri", "http://localhost:8080/kakao")  ->  ("redirect_uri", "http://localhost:3030/kakao") 
    
 
       
