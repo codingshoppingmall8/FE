@@ -110,9 +110,7 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
      쇼핑몰에 있는 상품 정보를 일일이 수작업으로 가져오는건 비효율적이라고 판단하여 파이썬으로 쇼핑몰에 있는 상품 정보를 크롤링하여 서버 DB에다 저장하였다.
      따라서 수작업으로 하실 예상소유시간 6시간 걸리는 작업을 30분으로 축소항 수 있음
     해결) 
-    ```python
-	
-#url = "https://onemorebag.kr/product/list.html?cate_no=45" 
+```python
 
 # url로 html 받아오기
 url = "https://www.onemorebag.kr/product/list.html?cate_no=676&page=5"
