@@ -185,7 +185,7 @@ for idx,post_url_val in enumerate(post_url_list):
   response = requests.post(server, json={'imgUrl':img_url,'title': title, 'desc':desc,'cost':int(cost), 'point':int(point),'category':category,'brand':brand})
   print(response)
   print()
-```
+```phthon
 </details>
     
     
