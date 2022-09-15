@@ -61,6 +61,20 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
     원인) payload를 잘못 보냄    
     해결) axios.delete는 data를 body에 담을 때 data:{}로 감싸서 보내줘야 한다고 함.    
       예) Axios.delete(`/posts/${id}`, {data:{posts: posts}})    
+      
+      
+## Back) TroubleShooting 
+
+- postman으로 Long 타입 리스트를 주는데 controller에서 그 값을 못 받음    
+    원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. 
+    해결) Long타입 List를 가지는 dto 클래스를 생성하고 controller에서 이 dto를 통해 List를 전달받음.
+    
+- page   
+    원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. 
+    해결) Long타입 List를 가지는 dto 클래스를 생성하고 controller에서 이 dto를 통해 List를 전달받음.
+   
+
+      
 
 ## 📃api명세서
 링크 : https://nonchalant-sturgeon-21a.notion.site/8-d8cd94d7525843618ebc766da876d5d0
