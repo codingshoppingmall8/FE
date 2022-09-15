@@ -66,7 +66,7 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 <br>
 <br>
 
-#### ERD
+## ERD
 ![ERD](https://user-images.githubusercontent.com/100353794/190327665-b0bc62fc-6070-405c-bc9f-b2db739ca613.PNG)
 
 
