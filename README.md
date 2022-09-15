@@ -64,8 +64,10 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 |게시글 등록|GET|api/member/cart|
 |게시글 삭제|DELETE|api/member/cart{id}|
 <br>
-#### ERD
-![ERD](https://user-images.githubusercontent.com/100353794/190327665-b0bc62fc-6070-405c-bc9f-b2db739ca613.PNG)
+
+## 💾ERD
+![image](https://user-images.githubusercontent.com/67679972/190326599-51dfb9a8-8e60-45f8-85ea-711b7c2f26cc.png)
+<br>
 
 
 -----------------
