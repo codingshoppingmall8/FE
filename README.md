@@ -41,6 +41,10 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
     - 장바구니에 상품 추가, 개별 삭제
     - checkbox 전체 선택, 해제, 선택 삭제
     - 장바구니 비우기 (목록 전체 삭제)
+
+## 💾ERD
+![image](https://user-images.githubusercontent.com/67679972/190326599-51dfb9a8-8e60-45f8-85ea-711b7c2f26cc.png)
+<br>
     
 ## 📃api명세서
 링크 : https://nonchalant-sturgeon-21a.notion.site/8-d8cd94d7525843618ebc766da876d5d0
@@ -63,10 +67,6 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 |장바구니 전체삭제|DELETE|api/member/cart/deleteAll|
 |게시글 등록|GET|api/member/cart|
 |게시글 삭제|DELETE|api/member/cart{id}|
-<br>
-
-## 💾ERD
-![image](https://user-images.githubusercontent.com/67679972/190326599-51dfb9a8-8e60-45f8-85ea-711b7c2f26cc.png)
 <br>
 
 
