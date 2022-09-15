@@ -111,7 +111,11 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
      따라서 수작업으로 하실 예상소유시간 6시간 걸리는 작업을 30분으로 축소항 수 있음
     해결) 
 ```python
-
+<details>
+    <summary>
+	 <b>크롤링 동작 코드 python</b>
+    </summary>
+<br>
 # url로 html 받아오기
 url = "https://www.onemorebag.kr/product/list.html?cate_no=676&page=5"
 scraper = cfscrape.create_scraper()
@@ -183,6 +187,7 @@ for idx,post_url_val in enumerate(post_url_list):
   print(response)
   print()
 ```
+</details>
     
     
     
