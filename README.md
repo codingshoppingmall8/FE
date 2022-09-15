@@ -88,16 +88,16 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 ## Back) TroubleShooting🧨  
 
 - postman으로 Long 타입 리스트를 주는데 controller에서 그 값을 못 받음    
-    원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. 
+    원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. <br>
     해결) Long타입 List를 가지는 dto 클래스를 생성하고 controller에서 이 dto를 통해 List를 전달받음.
     
 - page로 정렬된 게시글 리스트들을 return할 때 불필요한 값들까지 return됨(ex createdAt,cnt..post의 field들)   
-    원인) Post형 Page들을 리턴을 하기 때문에 발생한 문제.
+    원인) Post형 Page들을 리턴을 하기 때문에 발생한 문제.<br>
     해결) 먼저 post에서 필요한 정보들을 받는 dto객체를 생성을 하고 클래스 내부에 post객체를 받으면 dto List를 반환하는
           메소드를 작성. 이를 이용해서 Page<Post>를 반환을 하는 것이 아니라 Page<Postdto>를 반환함.
     
 - 카카오 로그인시 Kakao Rest API "Redirect URI mismatch." 에러   
-    원인) 프론트엔드에서 인가코드 받을때 Redirect URI가 백엔드에서 액세스토큰을 받을때 Redirect URI이 달라서 생긴 문제.
+    원인) 프론트엔드에서 인가코드 받을때 Redirect URI가 백엔드에서 액세스토큰을 받을때 Redirect URI이 달라서 생긴 문제.<br>
     해결) 액세스 토큰을 받을때 Redirect URI을   프론트와 똑같이 해줌으로써 해결
        예) ("redirect_uri", "http://localhost:8080/kakao")  ->  ("redirect_uri", "http://localhost:3030/kakao") 
 
