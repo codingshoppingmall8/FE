@@ -41,6 +41,33 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
     - 장바구니에 상품 추가, 개별 삭제
     - checkbox 전체 선택, 해제, 선택 삭제
     - 장바구니 비우기 (목록 전체 삭제)
+    
+## 📃api명세서
+링크 : https://nonchalant-sturgeon-21a.notion.site/8-d8cd94d7525843618ebc766da876d5d0
+|기능|메소드|URL|
+|------|---|---|
+|이메일중복체크|GET|api/member/signup|
+|회원가입|POST|api/member/signup|
+|로그인|POST|api/member/login|
+|카카오 로그인|GET|api/member/kakao|
+|메인페이지 가져오기|GET|api/post?page=|
+|메인페이지 정렬|GET|api/sort_post?page= &sort_method=|
+|카테고리별로 가져오기|GET|api/post_category?page=&cate_no=|
+|카테고리별로 정렬|GET|api/post_category?page=&cate_n&sort_method=|
+|상세페이지 가져오기|GET|api/post/{id}|
+|마이페이지 가져오기|GET|api/member/mypage|
+|마이페이지 수정|POST|api/member/mypage|
+|장바구니 담기|POST|api/member/cart/{id}|
+|장바구니 조회|GET|api/member/cart|
+|장바구니 삭제|DELETE|api/member/cart|
+|장바구니 전체삭제|DELETE|api/member/cart/deleteAll|
+|게시글 등록|GET|api/member/cart|
+|게시글 삭제|DELETE|api/member/cart{id}|
+<br>
+<br>
+
+#### ERD
+![ERD](https://user-images.githubusercontent.com/100353794/190327665-b0bc62fc-6070-405c-bc9f-b2db739ca613.PNG)
 
 
 -----------------
@@ -81,29 +108,4 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 
       
 
-## 📃api명세서
-링크 : https://nonchalant-sturgeon-21a.notion.site/8-d8cd94d7525843618ebc766da876d5d0
-|기능|메소드|URL|
-|------|---|---|
-|이메일중복체크|GET|api/member/signup|
-|회원가입|POST|api/member/signup|
-|로그인|POST|api/member/login|
-|카카오 로그인|GET|api/member/kakao|
-|메인페이지 가져오기|GET|api/post?page=|
-|메인페이지 정렬|GET|api/sort_post?page= &sort_method=|
-|카테고리별로 가져오기|GET|api/post_category?page=&cate_no=|
-|카테고리별로 정렬|GET|api/post_category?page=&cate_n&sort_method=|
-|상세페이지 가져오기|GET|api/post/{id}|
-|마이페이지 가져오기|GET|api/member/mypage|
-|마이페이지 수정|POST|api/member/mypage|
-|장바구니 담기|POST|api/member/cart/{id}|
-|장바구니 조회|GET|api/member/cart|
-|장바구니 삭제|DELETE|api/member/cart|
-|장바구니 전체삭제|DELETE|api/member/cart/deleteAll|
-|게시글 등록|GET|api/member/cart|
-|게시글 삭제|DELETE|api/member/cart{id}|
-<br>
-<br>
 
-#### ERD
-![ERD](https://user-images.githubusercontent.com/100353794/190327665-b0bc62fc-6070-405c-bc9f-b2db739ca613.PNG)
