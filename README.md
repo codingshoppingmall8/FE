@@ -77,7 +77,7 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 3. 관리자 페이지
     - 상품 등록
 
-## Front) TroubleShooting 
+## Front) TroubleShooting🧨 
 
 - A component is changing a controlled input to be uncontrolled.    
     원인) input 태그의 value 초기값이 undefined였다가 렌더링 후에 값이 들어와 바뀌면서 발생한 에러    
@@ -90,7 +90,7 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
       예) Axios.delete(`/posts/${id}`, {data:{posts: posts}})    
       
       
-## Back) TroubleShooting 
+## Back) TroubleShooting🧨  
 
 - postman으로 Long 타입 리스트를 주는데 controller에서 그 값을 못 받음    
     원인) postman에서는 json형식으로 list를 제공하는데 일반 List 객체는 이값을 받지 못함. 
