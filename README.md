@@ -68,9 +68,11 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 
 ## ERD
 ![image](https://user-images.githubusercontent.com/67679972/190326599-51dfb9a8-8e60-45f8-85ea-711b7c2f26cc.png)
+<br>
+<br>
+<br>
 
 
------------------
 ## 아쉬운 점 
 1. 상세페이지에서 뒤로가기를 하면 메인 첫 페이지로 돌아감
 2. 카테고리별 페이지네이션이 적용 안 됨
