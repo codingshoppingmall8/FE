@@ -67,4 +67,4 @@ FE 서버 배포: http://hyerimawsbucket.s3-website.ap-northeast-2.amazonaws.com
 참고링크 : https://nonchalant-sturgeon-21a.notion.site/8-d8cd94d7525843618ebc766da876d5d0
 
 #### ERD
-![image](https://user-images.githubusercontent.com/104494969/190316587-25d8ece9-733b-4a58-b0ea-147d1c45e84b.png)
+![ERD](https://user-images.githubusercontent.com/100353794/190327665-b0bc62fc-6070-405c-bc9f-b2db739ca613.PNG)
